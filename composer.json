@@ -1,0 +1,40 @@
+{
+    "name": "reed-jones/api-builder",
+    "description": "A third party API Consumption package for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reed Jones",
+            "email": "reedjones@reedjones.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/database": "^5.8 || ^6.0 || ^7.0",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0",
+        "kitetail/zttp": "^0.6.0"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^2.10",
+        "orchestra/database": "3.8.* || 3.9.* || ^4.0 || ^5.0",
+        "orchestra/testbench": "3.8.* || 3.9.* || ^4.0 || ^5.0",
+        "phpunit/phpunit": "^7.5 || ^8.4 || ^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReedJones\\ApiBuilder\\": "src/",
+            "ReedJones\\ApiBuilder\\Examples\\": "examples/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ReedJones\\ApiBuilder\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
